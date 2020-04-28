@@ -27,7 +27,7 @@ jobs:
     - run: npm install
     - run: npm run build --if-present
     - name: Run backend nohup
-      run: node hello.js
+      run: node hello.js &
     - name: hello
       run: echo hello
     
